@@ -132,8 +132,9 @@ function eyebrows() {
 }
 
 function eyebrow(x, y) {
+  var adjustedVol = map(vol, 0, 1, 0, 500);
   stroke(0);
-  strokeWeight(2);
+  strokeWeight(2+ adjustedVol);
   fill(255, 255, 255);
-  
+  line(x, y, x+55 ,y);
 }
